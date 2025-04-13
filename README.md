@@ -168,5 +168,3 @@ Developed as part of a senior-level technical assessment. Focused on:
 - High-performance Java
 - Clean architecture
 - Testable and maintainable systems
-```
-
