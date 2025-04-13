@@ -1,7 +1,6 @@
 package parking.model;
 
-import parking.ParkingLot;
-import parking.ParkingResult;
+import parking.service.ParkingLot;
 
 /**
  * Represents a car which requires one car spot or large spot.

@@ -1,7 +1,6 @@
 package parking.model;
 
-import parking.ParkingLot;
-import parking.ParkingResult;
+import parking.service.ParkingLot;
 
 /**
  * Abstract representation of a vehicle.

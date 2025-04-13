@@ -1,7 +1,6 @@
 package parking.model;
 
-import parking.ParkingLot;
-import parking.ParkingResult;
+import parking.service.ParkingLot;
 
 /**
  * Represents a van which requires either one large spot or three car spots.

@@ -1,7 +1,6 @@
 package parking.model;
 
-import parking.ParkingLot;
-import parking.ParkingResult;
+import parking.service.ParkingLot;
 
 /**
  * Represents a motorcycle which can fit in any type of spot.

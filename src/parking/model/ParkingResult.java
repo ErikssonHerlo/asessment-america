@@ -1,4 +1,4 @@
-package parking;
+package parking.model;
 
 /**
  * Represents the result of attempting to park a vehicle.
