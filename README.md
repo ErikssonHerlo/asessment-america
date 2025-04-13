@@ -97,10 +97,106 @@ This will trigger all parking tests and print detailed logs to the console.
 
 ---
 
-## 👤 Author
+# 🔢 QuadrupletSum Algorithm - Java Implementation
 
-This project was developed by **Eriksson Hernández** as part of a technical challenge.
+This module efficiently solves the classic **4Sum problem**, finding any combination of four distinct integers in an array that sum to a given target value. Designed with clean architecture, high-performance techniques, and Java best practices, it leverages an optimized **O(n²)** approach.
 
-📧 **Contact**: erikssonhernandez25@gmail.com
+---
+
+## 📁 Project Structure
+
+```
+src/
+└── quadruplet/
+├── Quadruplet.java           # Domain model to represent a valid 4-number combination
+├── QuadrupletFinder.java     # Core logic using a HashMap-based pair sum strategy (O(n²))
+└── QuadrupletTestRunner.java # Test suite that runs and validates multiple scenarios
+```
+
+---
+
+## 📌 Problem Definition
+
+> Given an integer array `nums` and a target value `target`, determine whether there exists a quadruplet `{a, b, c, d}` such that:
+>
+> `a + b + c + d == target`
+
+---
+
+## 🚀 Optimized Algorithm (O(n²) using HashMap)
+
+### 🧠 Strategy
+
+1. **Build a map** of all pair sums in the array:
+   ```
+   sum -> list of (i, j)
+   ```
+2. **Iterate again** through all other pairs `(k, l)` and check if:
+   ```
+   (target - nums[k] - nums[l]) exists in map
+   ```
+3. Ensure all **four indices are unique**.
+
+### 📈 Complexity
+
+| Type        | Value       |
+|-------------|-------------|
+| Time        | O(n²)       |
+| Space       | O(n²)       |
+| Validated   | Yes (distinct indices and original values) |
+
+---
+
+## ✅ Example Output
+
+```
+Small testcase: ✅ PASSED in 1 ms → [2, 0, 5, 4]
+With duplicates: ❌ FAILED - No quadruplet found.
+With negatives: ❌ FAILED - No quadruplet found.
+Zero target: ✅ PASSED in 0 ms → [83, 27, -57, -53]
+Large test #1: ✅ PASSED in 164 ms → [-94103, -95983, 98544, -98256]
+...
+All test cases passed!
+```
+
+---
+
+## 🧪 How to Run
+
+### Requirements
+
+- Java 17+
+- IDE (IntelliJ, Eclipse) or terminal access (`javac`, `java`)
+
+### Entry Point
+
+Run the following class:
+
+```
+src/quadruplet/QuadrupletTestRunner.java
+```
+
+This class:
+- Runs multiple predefined test cases (including large arrays).
+- Validates correct sum and value presence.
+- Measures performance in milliseconds.
+
+---
+
+## 🧱 Core Components
+
+| File                      | Responsibility                                             |
+|---------------------------|------------------------------------------------------------|
+| `Quadruplet.java`         | Represents a 4-number group with helper methods            |
+| `QuadrupletFinder.java`   | Contains the efficient O(n²) search logic using HashMap    |
+| `QuadrupletTestRunner.java` | Runs and validates all scenarios with performance logging |
+
+---
+
+## 🧑‍💻 Author
+
+This module was designed and implemented by **Eriksson Hernández** as part of a technical challenge, with a strong emphasis on algorithmic efficiency, software craftsmanship, and clear documentation.
+
+📧 Contact: [erikssonhernandez25@gmail.com](mailto:erikssonhernandez25@gmail.com)
 
 ---
