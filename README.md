@@ -20,7 +20,7 @@ This repository contains the solution to a **technical Java assessment** designe
 
 ---
 
-## 🧾 Overview
+## Overview
 
 This project includes:
 
@@ -35,7 +35,7 @@ Each solution is designed to:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -46,7 +46,7 @@ src/
 
 ---
 
-## 🅿️ Parking Lot System
+## Parking Lot System
 
 ### 🚦 Description
 A modular simulation of a parking lot managing:
@@ -107,7 +107,7 @@ java -cp out parking.ParkingLotTestLauncher
 
 ---
 
-## 🔢 QuadrupletSum Algorithm
+## QuadrupletSum Algorithm
 
 ### 📘 Problem
 Given an array `nums` and target `t`, find `{a,b,c,d}` such that:
@@ -155,7 +155,7 @@ java -cp out quadruplet.QuadrupletSumTestLauncher
 
 ---
 
-## 🔍 Quickselect Algorithm
+## Quickselect Algorithm
 
 ### 📘 Problem
 Find the k-th smallest element in an unsorted array in **less time than sorting**.
@@ -200,8 +200,47 @@ java -cp out quickselect.QuickselectTestRunner
 ```
 
 ---
+Gracias por notarlo. Aquí tienes la sección **Execution Instructions** para el archivo `Main.java`, que sirve como punto de entrada para ejecutar los tres algoritmos en orden:
 
-## 🧑‍💻 Author
+---
+
+## Execution Instructions
+
+### ✅ Prerequisites
+- Java 17 or later
+- Terminal or supported IDE (IntelliJ, Eclipse, etc.)
+---
+
+### 🛠️ Step-by-step Instructions
+
+#### 1. Compile the entire project
+
+From the root directory (where the `src/` folder is located), run:
+
+```bash
+javac -d out src/**/*.java
+```
+
+This compiles all source files into a new `out/` folder, preserving the package structure.
+
+---
+
+#### 2. Run the unified entry point
+
+To execute all three algorithms (ParkingLot, QuadrupletSum, and Quickselect), run:
+
+```bash
+java -cp out Main
+```
+
+This will sequentially:
+
+- Simulate all Parking Lot scenarios
+- Run test cases for the optimized QuadrupletSum algorithm
+- Run test cases for the Quickselect algorithm
+
+---
+## Author
 
 **Eriksson Hernández**  
 📧 [erikssonhernandez25@gmail.com](mailto:erikssonhernandez25@gmail.com)  
