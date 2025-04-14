@@ -24,6 +24,6 @@ public class Car extends Vehicle {
             lot.incrementLarge();
             return new ParkingResult(true, "Car parked in large spot (car spots full).");
         }
-        return new ParkingResult(false, "No available spot for car.");
+        return new ParkingResult(false, "❌ No available spot for car.");
     }
 }

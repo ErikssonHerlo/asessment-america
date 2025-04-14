@@ -13,16 +13,16 @@ public class Main {
         try {
             System.out.println("========== JAVA TECHNICAL ASSESSMENT ==============\n");
 
-            System.out.println("Running Parking Lot Simulation\n");
-            System.out.println("------------------------------------------");
+            System.out.println("Running Parking Lot Simulation");
+            System.out.println("------------------------------------------\n");
             ParkingLotTestLauncher.main(args);
 
-            System.out.println("\nRunning QuadrupletSum Tests\n");
-            System.out.println("------------------------------------------");
+            System.out.println("\nRunning QuadrupletSum Tests");
+            System.out.println("------------------------------------------\n");
             QuadrupletTestRunner.main(args);
 
-            System.out.println("\nRunning Quickselect Tests\n");
-            System.out.println("------------------------------------------");
+            System.out.println("\nRunning Quickselect Tests");
+            System.out.println("------------------------------------------\n");
             QuickselectTestRunner.main(args);
 
             System.out.println("\nAll modules executed successfully.");

@@ -1,4 +1,4 @@
-# 💼 Java Technical Assessment - Clean Architecture, OOP & Algorithms
+# Java Technical Assessment - Clean Architecture, OOP & Algorithms
 
 This repository contains the solution to a **technical Java assessment** designed to evaluate problem-solving skills, algorithmic efficiency, object-oriented design, and adherence to professional coding standards. The project covers three classic algorithmic problems, each implemented with:
 
@@ -71,6 +71,27 @@ A modular simulation of a parking lot managing:
 - **L**: Vehicle types override `tryPark()` safely
 - **I/D**: Loose coupling between vehicles and parking logic
 
+---
+### 📁 Directory Structure and File Responsibilities
+```
+src/
+└── parking/
+    ├── model/
+    │   ├── Vehicle.java           # Abstract base class for all vehicle types
+    │   ├── Motorcycle.java        # Motorcycle implementation with fallback logic
+    │   ├── Car.java               # Car implementation with fallback logic
+    │   ├── Van.java               # Van implementation, can occupy 1 large or 3 car spots
+    │   └── ParkingResult.java     # Encapsulates parking attempt result (success + message)
+    │
+    ├── service/
+    │   └── ParkingLot.java        # Core parking management system; tracks state and availability
+    │
+    ├── test/
+    │   └── ParkingScenarioRunner.java  # Runs parking scenarios and prints detailed logs
+    │
+    └── ParkingLotTestLauncher.java     # Entry point to execute all test scenarios
+```
+
 ### 🧪 Scenarios
 - Mixed vehicles
 - Overflow testing
@@ -108,6 +129,16 @@ a + b + c + d == t
 - ~99.99% runtime reduction on arrays of 1,000+ elements
 - From hours (brute) → milliseconds (optimized)
 
+---
+### 📁 Directory Structure and File Responsibilities
+
+```
+src/
+└── quadruplet/
+    ├── Quadruplet.java           # Model representing a valid group of four integers
+    ├── QuadrupletFinder.java     # Optimized logic using HashMap to find quadruplets in O(n²)
+    └── QuadrupletTestRunner.java # Validates multiple test cases including edge and large-scale arrays
+```
 ### 🔎 Example
 ```
 ✅ PASSED | Small testcase | result = [2, 0, 5, 4]
@@ -143,6 +174,16 @@ Find the k-th smallest element in an unsorted array in **less time than sorting*
 - Input validation with `Optional<Integer>`
 - Full test coverage: edge cases, duplicates, invalid `k`
 
+---
+### 📁 Directory Structure and File Responsibilities
+```
+src/
+└── quickselect/
+    ├── Quickselect.java            # Implements Quickselect to find the k-th smallest element efficiently
+    ├── ArrayUtils.java             # Provides utility for in-place element swapping
+    └── QuickselectTestRunner.java  # Runs tests for various input cases including edge and invalid values
+```
+
 ### 🧪 Sample Output
 ```
 ✅ PASSED | [3,1,4,0,2], k=2 → result: 2
@@ -164,7 +205,7 @@ java -cp out quickselect.QuickselectTestRunner
 
 **Eriksson Hernández**  
 📧 [erikssonhernandez25@gmail.com](mailto:erikssonhernandez25@gmail.com)  
-Developed as part of a senior-level technical assessment. Focused on:
+Developed as part of a technical assessment. Focused on:
 - High-performance Java
 - Clean architecture
 - Testable and maintainable systems

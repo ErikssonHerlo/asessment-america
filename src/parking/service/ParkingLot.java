@@ -10,9 +10,16 @@ import java.util.List;
  */
 public class ParkingLot {
 
-    private int totalMotorcycleSpots;
-    private int totalCarSpots;
-    private int totalLargeSpots;
+    /**
+     * The parking lot has three types of spots:
+     * the total number of spots is the sum of all three types and cannot be changed.
+     * 1. Motorcycle spots
+     * 2. Car spots
+     * 3. Large spots (can fit cars and vans)
+     */
+    private final int totalMotorcycleSpots;
+    private final int totalCarSpots;
+    private final int totalLargeSpots;
 
     private int occupiedMotorcycleSpots = 0;
     private int occupiedCarSpots = 0;
@@ -24,7 +31,6 @@ public class ParkingLot {
         this.totalCarSpots = carSpots;
         this.totalLargeSpots = largeSpots;
     }
-
 
     public int getTotalSpots() {
         return totalMotorcycleSpots + totalCarSpots + totalLargeSpots;
@@ -117,7 +123,6 @@ public class ParkingLot {
         return totalCarSpots - occupiedCarSpots;
     }
 
-
     /**
      * Prints the current status of the parking lot.
      */
@@ -130,6 +135,9 @@ public class ParkingLot {
         System.out.println("Van Occupied Spots: " + vanOccupiedSpots);
     }
 
+    /**
+     * Prints the status of the parking lot, including whether it's full or empty,
+     */
     public void printLotStatus() {
         System.out.println("\nLot full? " + (isFull() ? "Yes" : "No"));
         System.out.println("Lot empty? " + (isEmpty() ? "Yes" : "No"));

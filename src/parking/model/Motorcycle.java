@@ -28,6 +28,6 @@ public class Motorcycle extends Vehicle {
             lot.incrementLarge();
             return new ParkingResult(true, "Motorcycle parked in large spot (motorcycle & car spots full).");
         }
-        return new ParkingResult(false, "No available spot for motorcycle.");
+        return new ParkingResult(false, "❌ No available spot for motorcycle.");
     }
 }

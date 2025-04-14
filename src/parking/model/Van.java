@@ -26,6 +26,6 @@ public class Van extends Vehicle {
             lot.incrementVan(3);
             return new ParkingResult(true, "Van parked using 3 car spots (no large spots available).");
         }
-        return new ParkingResult(false, "No available spot for van.");
+        return new ParkingResult(false, "❌ No available spot for van.");
     }
 }

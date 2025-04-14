@@ -15,10 +15,6 @@ public abstract class Vehicle {
         this.id = id;
     }
 
-    public int getSpotsNeeded() {
-        return spotsNeeded;
-    }
-
     public String getVehicleType() {
         return vehicleType;
     }
